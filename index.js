@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer')
-// const cron = require('node-cron')
+const cron = require('node-cron')
 require('dotenv').config()
 
 const baseUrl = process.env.BASE_URL
@@ -21,5 +21,5 @@ async function start() {
 }
 
 // * Execute Function
-cron.schedule('0 21 * * 1-5', start, undefined, true, 'Asia/Rangoon')
+cron.schedule('17 21 * * 1-5', start, undefined, true, 'Asia/Rangoon')
 // start()
