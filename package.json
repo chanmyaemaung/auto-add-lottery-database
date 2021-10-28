@@ -1,13 +1,16 @@
 {
-  "name": "calendar_cron",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:chanmyaemaung/auto-add-lottery-database.git",
-  "author": "Chen Lay <maungmaungyoker.mmy@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "dotenv": "^10.0.0",
-    "node-cron": "^3.0.0",
-    "puppeteer": "^10.4.0"
-  }
+	"name": "calendar_cron",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"start": "node ./index.js"
+	},
+	"repository": "git@github.com:chanmyaemaung/auto-add-lottery-database.git",
+	"author": "Chen Lay <maungmaungyoker.mmy@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"dotenv": "^10.0.0",
+		"node-cron": "^3.0.0",
+		"puppeteer": "^10.4.0"
+	}
 }
