@@ -20,6 +20,17 @@ async function start() {
 	await browser.close()
 }
 
-// * Execute Function
-cron.schedule('20 21 * * 1-5', start, undefined, true, 'Asia/Rangoon')
-// start()
+// * Start Execute
+const startTask = cron.schedule('28 21 * * 1-5', start, {
+	scheduled: true,
+	timezone: 'Asia/Rangoon',
+})
+
+// * Stop Execution
+const stopStack = cron.schedule('30 21 * * 1-5', start, {
+	scheduled: true,
+	timezone: 'Asia/Rangoon',
+})
+
+startTask.start()
+stopStack.stop()
