@@ -2,6 +2,9 @@
 	"name": "calendar_cron",
 	"version": "1.0.0",
 	"main": "index.js",
+	"engines": {
+		"node": "14.x"
+	},
 	"scripts": {
 		"start": "node index.js"
 	},
