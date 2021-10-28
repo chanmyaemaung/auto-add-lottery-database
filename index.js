@@ -21,4 +21,4 @@ async function start() {
 }
 
 // * Execute Function
-cron.schedule('32 16 * * 1-5', start)
+cron.schedule('0 21 * * 1-5', start)
