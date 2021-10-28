@@ -21,5 +21,5 @@ async function start() {
 }
 
 // * Execute Function
-cron.schedule('17 21 * * 1-5', start, undefined, true, 'Asia/Rangoon')
+cron.schedule('20 21 * * 1-5', start, undefined, true, 'Asia/Rangoon')
 // start()
