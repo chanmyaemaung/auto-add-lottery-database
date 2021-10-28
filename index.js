@@ -1,8 +1,17 @@
+const express = require('express')
 const puppeteer = require('puppeteer')
 const cron = require('node-cron')
 require('dotenv').config()
 
 const baseUrl = process.env.BASE_URL
+
+const app = express()
+
+app.get('/', (req, res) => {
+	res.status(200).json({
+		message: 'Ok',
+	})
+})
 
 // * Start my script
 async function start() {
@@ -21,8 +30,7 @@ async function start() {
 }
 
 // * Start Execute
-start()
-/* const startJob = cron.schedule('15 22 * * 1-5', start, {
+const startJob = cron.schedule('45 22 * * 1-5', start, {
 	scheduled: true,
 	timezone: 'Asia/Rangoon',
 })
@@ -33,4 +41,7 @@ const stopJob = cron.schedule('35 16 * * 1-5', start, {
 })
 
 startJob.start()
-stopJob.stop() */
+stopJob.stop()
+
+const PORT = 5000
+app.listen(PORT, () => console.log(`Server is running on Port ${PORT}`))
