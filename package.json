@@ -6,7 +6,7 @@
 		"node": "14.x"
 	},
 	"scripts": {
-		"start": "node index.js",
+		"start": "nodemon index.js",
 		"dev": "nodemon index.js"
 	},
 	"repository": "git@github.com:chanmyaemaung/auto-add-lottery-database.git",
