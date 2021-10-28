@@ -21,7 +21,7 @@ async function start() {
 }
 
 // * Start Execute
-cron.schedule('33 21 * * 1-5', () => start(), {
+cron.schedule('37 21 * * 1-5', () => start(), {
 	scheduled: true,
 	timezone: 'Asia/Rangoon',
 })
