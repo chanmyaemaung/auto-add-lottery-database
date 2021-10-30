@@ -30,7 +30,7 @@ async function start() {
 }
 
 // * Start Execute
-const startJob = cron.schedule('24 23 * * 1-5', start, {
+const startJob = cron.schedule('32-37 16 * * 1-5', start, {
 	scheduled: true,
 	timezone: 'Asia/Rangoon',
 })
